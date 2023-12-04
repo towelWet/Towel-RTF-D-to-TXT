@@ -1,3 +1,5 @@
+ONLY RTFD TO TXT WORKS FOR NOW!
+
 # 📜 Towel RTF(D) to TXT Converter
 
 The Towel RTF(D) to TXT Converter is an efficient tool for macOS users to convert RTFD and RTF files to plain text (TXT) format. It combines user-friendly design with powerful functionality, making it an ideal solution for handling rich text files.
