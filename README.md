@@ -1,55 +1,62 @@
-# 📜 Towel RTF(D) Converter
+# 📜 Towel RTF(D) to TXT Converter
 
-The Towel RTF(D) Converter is a powerful and user-friendly tool for converting RTFD and RTF files to TXT format. Ideal for macOS users who need to transform their rich text files into plain text effortlessly. 🌟
+The Towel RTF(D) to TXT Converter is an efficient tool for macOS users to convert RTFD and RTF files to plain text (TXT) format. It combines user-friendly design with powerful functionality, making it an ideal solution for handling rich text files.
 
 ## 🚀 Getting Started
 
-Follow these simple steps to get your Towel RTF(D) Converter up and running!
+These instructions will help you set up and run the Towel RTF(D) to TXT Converter on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 - macOS 12.6 or later.
 - Python 3.11 installed.
+- PyInstaller for packaging the application.
 
-### 📥 Installation
+### 🛠 Installation
 
-1. **Clone or Download the Repository**
-   - Clone this repo to your local machine using:
-     ```bash
-     git clone https://example.com/TowelRTFDConverter.git
-     ```
-   - Or download the ZIP file and extract it.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/towelWet/Towel-RTF-D-to-TXT/tree/main
+   ```
 
 2. **Navigate to the Project Directory**
-   - Open the terminal and navigate to the project directory:
-     ```bash
-     cd path/to/TowelRTFDConverter
-     ```
+   ```bash
+   cd path/to/Towel-RTF-D-to-TXT
+   ```
 
-3. **Install Dependencies (if any)**
+3. **(Optional) Install Virtual Environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-### 🏃‍♂️ Running the Application
+4. **Install Dependencies**
+   - If your project requires any dependencies, install them here.
 
-1. **Open the Application**
-   - Navigate to the `dist` folder.
-   - Double-click on the `Towel RTF RTFD to TXT.app` to run the application.
+### 📦 Packaging the Application with PyInstaller
+
+1. **Install PyInstaller**
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. **Package the Application**
+   ```bash
+   pyinstaller --onefile --windowed --name "Towel RTF RTFD to TXT" --icon=/path/to/AppIcon.icns RTFD.py
+   ```
+   - Replace `/path/to/AppIcon.icns` with the actual path to your icon file.
+
+3. **Locate the Packaged Application**
+   - The executable will be located in the `dist` directory.
+
+### 🏃 Running the Application
+
+- Open the `dist` directory.
+- Double-click on `Towel RTF RTFD to TXT.app` to run the application.
 
 ### 🖥️ Using the Application
 
-1. **Select RTFD/RTF Files**
-   - Click on the "Select RTFD/RTF Files" button to choose the files you want to convert. 📂
-
-2. **Choose Output Folder**
-   - Select an output folder where the converted TXT files will be saved. 📁
-
-3. **Convert Files**
-   - Hit the "Convert Files" button to start the conversion process. Magic happens! ✨
-
-4. **Conversion Success**
-   - After successful conversion, you'll get a notification. All your TXT files are now in the chosen output folder. 🎉
-
-### ⚙️ Built With
-
-- Python 3.11
-- Tkinter - Python GUI toolkit
-- PyInstaller - for packaging the application
+- **Select Files**: Click "Select RTFD/RTF Files" to choose files for conversion.
+- **Output Folder**: Choose a destination folder for the converted TXT files.
+- **Convert**: Click "Convert Files" to start the conversion.
+- **Notification**: A success message appears once the conversion is complete.
